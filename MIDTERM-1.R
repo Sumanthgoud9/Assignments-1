@@ -27,7 +27,7 @@ predict_data$PredictedPrice <- predict(poly_model, newdata = predict_data)
 # Plot the data and the polynomial curve
 ggplot(car_data, aes(x = Mileage, y = Price)) +
   geom_point() +
-  geom_line(data = predict_data, aes(x = Mileage, y = PredictedPrice), color = "green", size = 1) +
+  geom_line(data = predict_data, aes(x = Mileage, y = PredictedPrice), color = "blue", size = 1) +
   labs(title = "Polynomial Regression: Mileage vs. Price",
        x = "Mileage",
        y = "Price") +
